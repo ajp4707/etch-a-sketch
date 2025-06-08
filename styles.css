@@ -1,15 +1,20 @@
 * {
     box-sizing: border-box;
+    margin: 0;
 }
 
 body {
     margin: 0;
-    height: 100vh;
-    flex-direction: column;
+}
+ 
+div.content {
     display: flex;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
 }
 
-div.container {
+div.etch-container {
     flex: auto;
     background-color: aquamarine;
 
@@ -17,7 +22,9 @@ div.container {
     flex-direction: column;
 
     border: 1em maroon solid;
+    width: 100vw;
 }
+
 
 div.row_container {
     display: flex;
@@ -29,5 +36,9 @@ div.row_container {
 div.etch_a_sketch_cell {
     flex: auto;
     background-color:beige;
-    border: 1px white dashed;
+    /* border: 1px white dashed; */
+}
+
+button {
+    width: fit-content;
 }
